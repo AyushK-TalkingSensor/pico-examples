@@ -18,7 +18,7 @@ pico_sdk_init()
 
 include(example_auto_set_url.cmake)
 # Add blink example
-add_subdirectory(blink)
+add_subdirectory(serialIRQ)
 
 # Add hello world example
 add_subdirectory(hello_world)
@@ -31,6 +31,9 @@ add_compile_options(-Wall
 
 # Hardware-specific examples in subdirectories:
 add_subdirectory(adc)
+add_subdirectory(Pin_irqwithUart)
+add_subdirectory(DosingSystem-v1)
+#add_subdirectory(serialIRQ)
 add_subdirectory(clocks)
 add_subdirectory(cmake)
 add_subdirectory(divider)
