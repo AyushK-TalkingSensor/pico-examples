@@ -1,9 +1,18 @@
 #include "dosingSystemCommon.h"
 
+int main(void)
+{
+    dosingSystemTraceInit();
+    dosingSystemLevelSensorInit();
+    dosingSystemPulseSensorInit();
+    dosingSystemModbusCommInit();
+    dosingSystemLedStatusInit();
+    dosingSystemModeSelectInit();
+    dosingSystemMotorCtrlInit();
 
+    uart_puts(TRACE_UART0, "\nInitilization Successfully Completed\n");
 
-int main(void){
-printf(Ayush);
-dosingSystemTestApp();
-return 0;
+    dosingSystemTestApp();
+
+    return 0;
 }

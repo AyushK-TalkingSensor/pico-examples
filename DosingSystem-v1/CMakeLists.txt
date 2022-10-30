@@ -1,4 +1,11 @@
-add_executable( dosingSystemMain dosingSystemMain.c dosingSystemTestApp.c dosingSystemHandler.c dosingSystemInit.c)
+add_executable( dosingSystemMain 
+            dosingSystemMain.c 
+            dosingSystemTestApp.c 
+            dosingSystemHandler.c 
+            dosingSystemInit.c 
+            dosingSystemModules.c
+            dosingSystemMemAlloc.c
+            )
 #add_executable( dosingSystemApp dosingSystemApp.c )
 
 
